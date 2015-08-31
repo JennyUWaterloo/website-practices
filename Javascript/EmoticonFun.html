@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <title>Having Fun With Emoticons</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+	<button id="myButton">You know you want to click me~</button>
+
+	<p></p>
+
+	<button id="textChanger">Make me happy!</button>
+
+	<p><div id="firstDiv">(๑´╹‸╹`๑)</div></p>
+
+	<p></p>
+
+	<button id="textAppender">Make them join hands!</button>
+
+	<p><div id="secondDiv">o (^‿^✿)</div></p>
+	<p><div id="thirdDiv">(✿◠‿◠) o</div></p>
+	<p id="text">foo</p>
+
+	<script type="text/javascript">
+
+		document.getElementById("text").innerHTML = "Javascript is fun!";
+
+		document.getElementById("myButton").onclick = function() {
+			alert("why hello there ♫꒰･‿･๑꒱");
+		}
+
+		document.getElementById("textChanger").onclick = function() {
+			document.getElementById("firstDiv").innerHTML = "♪(๑ᴖ◡ᴖ๑)♪";
+		}
+
+		document.getElementById("textAppender").onclick = function() {
+			document.getElementById("secondDiv").innerHTML = document.getElementById("thirdDiv").innerHTML + document.getElementById("secondDiv").innerHTML;
+
+			document.getElementById("thirdDiv").innerHTML = "";
+		}
+
+	</script>
+
+</body>
+</html>
